@@ -21,5 +21,8 @@ public class Voto {
 	@JoinColumn(name="EleitorId") 
 	private Eleitor Eleitor; 
 	
+	@ManyToOne	
+	@JoinColumn(name = "ZonaId")
+	private Zona zona;	
 
 }
